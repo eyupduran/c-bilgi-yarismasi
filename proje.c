@@ -20,18 +20,18 @@ struct Skor{
 };
 int main(){
 	system("color 3");
-	//DEGÝÞKENLER
+	//DEGÃÃžKENLER
 	int x,i,sorunumarasi=1,rastgele,cevap,puan=0,e=0,a,guncel=-1,se=0,sil[10],sileleman=0;
 	//se skor elman
 	char kulcevap[5];
-	//DEGÝÞKENLER SON
+	//DEGÃÃžKENLER SON
 	
 
 	    struct Skor skorlar[5];
         struct Soru sorular[20];
 		//birinci.soruid=0;
-	    //e dizinin struct elemanýdýr.
-	    //a rasgele atmak için
+	    //e dizinin struct elemanÃ½dÃ½r.
+	    //a rasgele atmak iÃ§in
 	    
 	    
 	    	                        //SORULAR
@@ -42,7 +42,7 @@ int main(){
 			strcpy(sorular[e].sik_A,"Rabat");
 			strcpy(sorular[e].sik_B,"Kazablanka");
 			strcpy(sorular[e].sik_C,"Kahire");
-			strcpy(sorular[e].sik_D,"Baðdat");
+			strcpy(sorular[e].sik_D,"BaÃ°dat");
 			strcpy(sorular[e].dogru_cevap,"a");
 			e++;
 		//SORULAR 2-
@@ -74,7 +74,7 @@ int main(){
 			e++;
 		//SORULAR 5-
 		sorular[e].soruid=e+1;
-			strcpy(sorular[e].soru_metni,"Galatasaray hangi yil UEFA kupasini almýstir?");
+			strcpy(sorular[e].soru_metni,"Galatasaray hangi yil UEFA kupasini almÃ½stir?");
 			strcpy(sorular[e].sik_A,"2000");
 			strcpy(sorular[e].sik_B,"2001");
 			strcpy(sorular[e].sik_C,"2002");
@@ -92,7 +92,7 @@ int main(){
 		for(i=0;;i++){
 			scanf("%d",&x);
 			if(!(x>0 && x<7)){
-			printf("Hatali seçim... \nLütfen Tekrar deneyiniz!!\n");
+			printf("Hatali seÃ§im... \nLÃ¼tfen Tekrar deneyiniz!!\n");
 			}
 			if(x==1){
 		    system("cls");
@@ -108,7 +108,7 @@ int main(){
 			scanf("%s",&sorular[e].sik_C);
 			printf("D)");
 			scanf("%s",&sorular[e].sik_D);
-			printf("Cevabý giriniz :");
+			printf("CevabÃ½ giriniz :");
 			scanf("%s",&sorular[e].dogru_cevap);
 			FILE *dosya;
             dosya=fopen("Sorular.txt","a");
@@ -150,7 +150,7 @@ int main(){
 			if(x==3){
 				system("cls");
 			
-				// Sorularý Gösterme
+				// SorularÃ½ GÃ¶sterme
 				FILE *dosya;
 				char karakter;
 				dosya=fopen("Sorular.txt","r");
@@ -161,7 +161,7 @@ int main(){
 				while(karakter!=EOF);
 				fclose(dosya);
 				// son
-				//güncelleme
+				//gÃ¼ncelleme
 				for(i=0;;i++){
 				printf("Guncellemek istediginiz soru numarasini giriniz : ");
 				scanf("%d",&guncel);
@@ -181,7 +181,7 @@ int main(){
 			    scanf("%s",&sorular[guncel-1].sik_C);
 			    printf("D)");
 			    scanf("%s",&sorular[guncel-1].sik_D);
-			    printf("Cevabý giriniz :");
+			    printf("CevabÃ½ giriniz :");
 			    scanf("%s",&sorular[guncel-1].dogru_cevap);
 			    FILE *dosya2;
                 dosya2=fopen("Sorular.txt","w");
@@ -195,7 +195,7 @@ int main(){
 			if(x==4){
 				system("cls");
 			int c;
-			// c döngü degiþkeni
+			// c dÃ¶ngÃ¼ degiÃ¾keni
 			a=e+1;
 			for(c=0;c<5;c++){
 			srand(time(NULL));
